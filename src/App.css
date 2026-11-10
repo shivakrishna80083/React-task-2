@@ -1,0 +1,206 @@
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 18px 8%;
+  background: #172554;
+  color: white;
+}
+
+.navbar h2 {
+  margin: 0;
+}
+
+/* Welcome Section */
+
+.welcome-section {
+  text-align: center;
+  padding: 45px 20px 25px;
+}
+
+.welcome-section h1 {
+  color: #172554;
+  margin-bottom: 10px;
+}
+
+.welcome-section p {
+  color: #64748b;
+}
+
+/* Buttons */
+
+.login-btn,
+.logout-btn {
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.login-btn {
+  background: #2563eb;
+  color: white;
+  width: 100%;
+  margin-top: 20px;
+}
+
+.login-btn:hover {
+  background: #1d4ed8;
+}
+
+.logout-btn {
+  background: #ef4444;
+  color: white;
+}
+
+.logout-btn:hover {
+  background: #dc2626;
+}
+
+/* Login Page */
+
+.auth-container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #eff6ff;
+  padding: 20px;
+}
+
+.auth-card {
+  background: white;
+  width: 100%;
+  max-width: 380px;
+  padding: 40px 30px;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.auth-icon {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
+
+.auth-card h2 {
+  color: #172554;
+  margin-bottom: 10px;
+}
+
+.auth-card p {
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* User List */
+
+.user-section {
+  padding: 30px 8% 60px;
+}
+
+.section-heading {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.section-heading h2 {
+  color: #172554;
+  font-size: 28px;
+}
+
+.section-heading p {
+  color: #64748b;
+}
+
+.user-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 22px;
+}
+
+.user-card {
+  background: white;
+  padding: 25px;
+  border-radius: 14px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 5px 18px rgba(0, 0, 0, 0.04);
+  transition: 0.3s;
+}
+
+.user-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.09);
+}
+
+.user-avatar {
+  width: 55px;
+  height: 55px;
+  border-radius: 50%;
+  background: #dbeafe;
+  color: #1d4ed8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+
+.user-card h3 {
+  color: #172554;
+  margin-bottom: 15px;
+}
+
+.user-card p {
+  color: #475569;
+  font-size: 14px;
+  overflow-wrap: anywhere;
+  margin: 10px 0;
+}
+
+.user-role {
+  display: inline-block;
+  background: #eff6ff;
+  color: #1d4ed8;
+  padding: 7px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+/* Responsive Design */
+
+@media (max-width: 900px) {
+  .user-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .user-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .navbar {
+    padding: 15px 5%;
+  }
+
+  .navbar h2 {
+    font-size: 18px;
+  }
+
+  .user-section {
+    padding: 25px 5%;
+  }
+
+  .welcome-section h1 {
+    font-size: 25px;
+  }
+}
